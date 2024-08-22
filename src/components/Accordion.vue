@@ -4,15 +4,15 @@
   </div>
 </template>
   
-  <script>
+<script>
   export default {
     name: 'Accordion'
   }
-  </script>
-  
-  <style scoped>
+</script>
+
+<style scoped>
   .accordion {
     width: 100%;
   }
-  </style>
+</style>
   

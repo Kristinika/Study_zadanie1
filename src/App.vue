@@ -1,13 +1,11 @@
 <template>
-  <div id="app">
-    <AccordionPage />
-  </div>
+  <AccordionPage />
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  export default {
+    name: 'App'
+  }
 </script>
 
 <style>

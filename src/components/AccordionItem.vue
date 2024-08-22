@@ -17,26 +17,21 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'AccordionItem',
-  props: {
-    title: {
-      type: String,
-      required: true
-    }
+<script setup>
+import { ref } from 'vue';
+
+const props = defineProps({
+  title: {
+    type: String,
+    required: true,
   },
-  data() {
-    return {
-      isOpen: false
-    };
-  },
-  methods: {
-    toggle() {
-      this.isOpen = !this.isOpen;
-    }
-  }
-}
+});
+
+const isOpen = ref(false);
+
+const toggle = () => {
+  isOpen.value = !isOpen.value;
+};
 </script>
 
 <style scoped>
